@@ -1,31 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoGIS Studio | Victoria Carbone</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Clean font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="logo-wrap">
-
-  <div class="logo-icon">
-    ⛰
-  </div>
-
-  <div class="logo-text">
-    <div class="logo-main">EcoGIS</div>
-    <div class="logo-sub">STUDIO</div>
-  </div>
-
-</div>
-  
+<!-- NAVIGATION -->
 <nav class="nav">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -34,50 +18,111 @@
   <a href="contact.html">Contact</a>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
+
   <div class="hero-overlay">
 
-    <div class="logo">
-      EcoGIS <span>Studio</span>
+    <div class="logo-wrap">
+
+      <div class="logo-icon">⛰</div>
+
+      <div class="logo-text">
+        <div class="logo-main">EcoGIS</div>
+        <div class="logo-sub">STUDIO</div>
+      </div>
+
     </div>
 
-    <p class="tagline">Mapping wildlife, landscapes, and ecological systems</p>
-    <p class="subtag">GIS • Wildlife Ecology • Conservation Research</p>
+    <p class="tagline">
+      Mapping wildlife, landscapes, and ecological systems
+    </p>
+
+    <p class="subtag">
+      GIS • Wildlife Ecology • Spatial Analysis • Conservation Research
+    </p>
 
   </div>
+
 </header>
 
-  <!-- PROJECTS -->
-  <section class="section alt">
-    <h2>Featured Projects</h2>
+<!-- MISSION -->
+<section class="mission-banner reveal">
 
-    <div class="grid">
+  <p>
+    EcoGIS Studio explores ecological systems through geospatial analysis,
+    landscape interpretation, field observation, and environmental storytelling.
+  </p>
 
-      <div class="card">
-        <h3>Wildlife Corridor Analysis</h3>
-        <p>Mapping habitat connectivity using spatial resistance modeling and landscape features.</p>
+</section>
+
+<!-- FIELD NOTES -->
+<section class="field-journal reveal">
+
+  <div class="journal-label">FIELD NOTE 01</div>
+
+  <h2>Landscape Connectivity</h2>
+
+  <p>
+    Spatial analysis can reveal how fragmented environments influence movement,
+    habitat accessibility, and ecological resilience across landscapes.
+  </p>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="section reveal">
+
+  <h2>Featured GIS Projects</h2>
+
+  <div class="grid">
+
+    <a href="corridor-analysis.html" class="project-link">
+
+      <div class="card pinned-card">
+
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+             alt="Forest corridor analysis">
+
+        <div class="pin"></div>
+
+        <h3>Wildlife Corridor Connectivity</h3>
+
+        <p>
+          Modeling habitat connectivity using resistance surfaces and spatial analysis workflows.
+        </p>
+
       </div>
 
-      <div class="card">
+    </a>
+
+    <a href="urban-wildlife.html" class="project-link">
+
+      <div class="card pinned-card">
+
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+             alt="Urban wildlife mapping">
+
+        <div class="pin"></div>
+
         <h3>Urban Wildlife Distribution</h3>
-        <p>Analyzing species presence patterns across human-dominated environments.</p>
+
+        <p>
+          Mapping species observations and ecological patterns across urban environments.
+        </p>
+
       </div>
 
-    </div>
-  </section>
+    </a>
 
-  <!-- STORYMAPS -->
-  <section class="section">
-    <h2>Interactive Mapping</h2>
-
-  <div class="map-embed">
-    <p>ArcGIS StoryMap / Interactive Map</p>
   </div>
-  </section>
 
-  <section class="section">
+</section>
 
-  <h2>Interactive Mapping</h2>
+<!-- STORYMAP -->
+<section class="section reveal">
+
+  <h2>Interactive StoryMaps</h2>
 
   <div class="storymap-frame">
 
@@ -93,27 +138,73 @@
 
 </section>
 
-  <!-- SKILLS -->
-  <section class="section alt">
-    <h2>Tools & Skills</h2>
-    <p>ArcGIS Pro • ArcGIS Online • QGIS • Spatial Analysis • Python (basic) • Remote Sensing</p>
-  </section>
+<!-- GALLERY -->
+<section class="gallery-section reveal">
 
-  <!-- FIELD IDENTITY -->
-  <section class="section">
-    <h2>Field & Research Approach</h2>
-    <p>
-      Field observation and spatial analysis guide my approach to understanding ecological systems.
-      I aim to connect on-the-ground ecological patterns with broader landscape-scale processes.
-    </p>
-  </section>
+  <h2>Map Gallery</h2>
 
-  <!-- CONTACT -->
-  <footer class="footer">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <a href="resume.pdf">Download Resume</a>
-  </footer>
+  <div class="gallery-grid">
+
+    <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+       target="_blank"
+       class="gallery-item">
+
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+           alt="Forest map">
+
+      <div class="gallery-overlay">
+        Wildlife Corridor Analysis
+      </div>
+
+    </a>
+
+    <a href="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+       target="_blank"
+       class="gallery-item">
+
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+           alt="Forest canopy">
+
+      <div class="gallery-overlay">
+        Habitat Connectivity Mapping
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <h2>EcoGIS Studio</h2>
+
+  <p>
+    Wildlife Ecology • Spatial Analysis • Conservation Mapping
+  </p>
+
+</footer>
+
+<!-- REVEAL SCRIPT -->
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+function revealSections() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  reveals.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < triggerBottom) {
+      section.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealSections);
+revealSections();
+</script>
 
 </body>
 </html>
