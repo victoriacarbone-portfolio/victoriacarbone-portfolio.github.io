@@ -7,12 +7,22 @@ body {
   font-family: "Inter", sans-serif;
   color: #1f2a1f;
   line-height: 1.6;
-
-  /* soft paper + topo feel */
   background-color: #f3f5f2;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
   background-image:
     url("https://www.transparenttextures.com/patterns/paper-fibers.png"),
-    url("https://www.transparenttextures.com/patterns/subtle-freckles.png");
+    url("https://www.transparenttextures.com/patterns/topography.png");
+
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* =========================
@@ -70,6 +80,38 @@ LOGO
 .logo span {
   font-weight: 600;
   color: #b7d3b0;
+}
+
+/* =====================================
+   ECOGIS STUDIO LOGO
+   ===================================== */
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  font-size: 2.2rem;
+  color: #b7d3b0;
+}
+
+.logo-main {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: #c7d8c7;
+  margin-top: 4px;
 }
 /* =========================
 BANNER
@@ -380,6 +422,69 @@ RESUME
   letter-spacing: 1px;
 }
 
+.storymap-frame {
+  background: #e7eee6;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  border: 1px solid #d0dbd0;
+}
+
+.storymap-frame iframe {
+  border-radius: 10px;
+}
+
+/* =====================================
+   GIS GALLERY
+   ===================================== */
+
+.gallery-section {
+  margin-top: 60px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: block;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20,35,20,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
 /* =========================
    FOOTER
    ========================= */
@@ -410,4 +515,70 @@ p {
 
 section {
   scroll-margin-top: 80px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+@media (max-width: 900px) {
+
+  .section,
+  .projects-page,
+  .field-profile,
+  .case-study,
+  .cv-page {
+    padding: 50px 10%;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1,
+  .logo {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
+  }
+
+     .mission-banner {
+    padding: 25px 10%;
+  }
+
+  .hero-map {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+  }
+
+  .hero h1,
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .section,
+  .projects-page,
+  .field-profile,
+  .case-study,
+  .cv-page {
+    padding: 40px 7%;
+  }
 }
