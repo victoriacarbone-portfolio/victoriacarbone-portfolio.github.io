@@ -16,6 +16,21 @@ body {
 }
 
 /* =========================
+TYPOGRAPHY
+   ========================= */
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+/* =========================
    NAVIGATION
    ========================= */
 
@@ -55,6 +70,18 @@ LOGO
 .logo span {
   font-weight: 600;
   color: #b7d3b0;
+}
+/* =========================
+BANNER
+   ========================= */
+.mission-banner {
+  background: #dfe7df;
+  padding: 35px 22%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #314231;
+  border-top: 1px solid #c7d3c7;
+  border-bottom: 1px solid #c7d3c7;
 }
 /* =========================
    HERO SECTION
