@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Projects | EcoGIS Studio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="logo-wrap">
-
-  <div class="logo-icon">
-    ⛰
-  </div>
-
-  <div class="logo-text">
-    <div class="logo-main">EcoGIS</div>
-    <div class="logo-sub">STUDIO</div>
-  </div>
-
+<div class="logo-section">
+  <img src="EcoGIS Logo.png" alt="EcoGIS Studio Logo" class="logo-image">
 </div>
-  
+
+<!-- NAVIGATION -->
+
 <nav class="nav">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -30,92 +26,106 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="projects-page">
+<!-- PROJECT PAGE INTRO -->
 
-  <h1>GIS & Conservation Work</h1>
+<section class="projects-intro reveal">
 
-  <!-- GIS ANALYSIS -->
-  <div class="project-section">
-    <h2>Spatial Analysis</h2>
+  <h1>GIS & Conservation Projects</h1>
 
-<a href="corridor-analysis.html" class="project-link">
-  <div class="card">
+  <p>
+    A collection of spatial analysis, ecological mapping,
+    StoryMaps, and conservation-focused GIS work exploring
+    wildlife systems, landscape connectivity, and environmental change.
+  </p>
 
-    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
-         alt="Forest corridor map">
-
-    <h3>Wildlife Corridor Connectivity</h3>
-
-    <p>
-      Modeling habitat connectivity using resistance surfaces and landscape features.
-    </p>
-
-  </div>
-</a>
-
-    <!-- MAKE THE ONES BELOW LOOK LIKE THE ONE ABOVE -->
-
-      <div class="card">
-        <h3>Habitat Suitability Mapping</h3>
-        <p>Evaluating spatial suitability across ecological variables.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- STORYMAPS -->
-  <div class="project-section">
-    <h2>StoryMaps & Narrative GIS</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Urban Wildlife Patterns</h3>
-        <p>Interactive narrative exploring species distribution in urban environments.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONSERVATION RESEARCH -->
-  <div class="project-section">
-    <h2>Conservation Research</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Wetland Change Analysis</h3>
-        <p>Assessing ecological change using spatial datasets and remote sensing.</p>
-      </div>
-    </div>
-  </div>
-  
 </section>
-  
-  <section class="gallery-section">
 
-  <h2>Map Gallery</h2>
+<!-- PROJECT GALLERY -->
+
+<section class="gallery-section reveal">
 
   <div class="gallery-grid">
 
-    <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-       target="_blank"
+    <!-- PROJECT 1 -->
+
+    <a href="corridor-analysis.html"
        class="gallery-item">
 
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-           alt="Forest landscape">
+           alt="Wildlife corridor analysis">
 
       <div class="gallery-overlay">
-        Wildlife Corridor Analysis
+
+        <h3>Wildlife Corridor Connectivity</h3>
+
+        <p>
+          Modeling habitat connectivity using resistance surfaces
+          and landscape analysis workflows.
+        </p>
+
       </div>
 
     </a>
 
-    <a href="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
-       target="_blank"
+    <!-- PROJECT 2 -->
+
+    <a href="habitat-suitability.html"
        class="gallery-item">
 
       <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
-           alt="Forest canopy">
+           alt="Habitat suitability mapping">
 
       <div class="gallery-overlay">
-        Habitat Connectivity Mapping
+
+        <h3>Habitat Suitability Mapping</h3>
+
+        <p>
+          Evaluating ecological suitability across environmental
+          and landscape variables.
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- PROJECT 3 -->
+
+    <a href="urban-wildlife.html"
+       class="gallery-item">
+
+      <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1"
+           alt="Urban wildlife patterns">
+
+      <div class="gallery-overlay">
+
+        <h3>Urban Wildlife Patterns</h3>
+
+        <p>
+          Interactive StoryMap exploring species distribution
+          across urban ecosystems.
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- PROJECT 4 -->
+
+    <a href="wetland-change.html"
+       class="gallery-item">
+
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+           alt="Wetland change analysis">
+
+      <div class="gallery-overlay">
+
+        <h3>Wetland Change Analysis</h3>
+
+        <p>
+          Assessing ecological change using remote sensing,
+          GIS workflows, and spatial datasets.
+        </p>
+
       </div>
 
     </a>
@@ -123,6 +133,40 @@
   </div>
 
 </section>
+
+
+<!-- STORYMAP -->
+<section class="section reveal">
+
+  <h2>Interactive StoryMaps</h2>
+
+  <div class="storymap-frame">
+
+    <iframe
+      src="YOUR-STORYMAP-LINK"
+      width="100%"
+      height="600"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <h2>EcoGIS Studio</h2>
+
+  <p>
+    GIS • Wildlife Ecology • Spatial Analysis • Conservation Research
+  </p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
