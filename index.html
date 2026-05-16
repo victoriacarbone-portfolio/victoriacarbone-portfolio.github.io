@@ -10,7 +10,7 @@
 <body>
 
 <div class="logo-section">
-  <img src="EcoGIS Logo.png" alt="EcoGIS Studio Logo" class="logo">
+  <img src="EcoGIS Logo.png" alt="EcoGIS Studio Logo" class="logo-image">
 </div>
 
 <!-- NAVIGATION -->
@@ -27,23 +27,14 @@
 
   <div class="hero-overlay">
 
-    <div class="logo-wrap">
-
-      <div class="logo-icon">⛰</div>
-
-      <div class="logo-text">
-        <div class="logo-main">EcoGIS</div>
-        <div class="logo-sub">STUDIO</div>
-      </div>
+    <div class="logo">
+      EcoGIS <span>Studio</span>
+    </div>
 
     </div>
 
     <p class="tagline">
-      Mapping wildlife, landscapes, and ecological systems
-    </p>
-
-    <p class="subtag">
-      GIS • Wildlife Ecology • Spatial Analysis • Conservation Research
+        Mapping wildlife, landscapes, and ecological systems
     </p>
 
   </div>
@@ -123,61 +114,6 @@
 
 </section>
 
-<!-- STORYMAP -->
-<section class="section reveal">
-
-  <h2>Interactive StoryMaps</h2>
-
-  <div class="storymap-frame">
-
-    <iframe
-      src="YOUR-STORYMAP-LINK"
-      width="100%"
-      height="600"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-
-  </div>
-
-</section>
-
-<!-- GALLERY -->
-<section class="gallery-section reveal">
-
-  <h2>Map Gallery</h2>
-
-  <div class="gallery-grid">
-
-    <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-       target="_blank"
-       class="gallery-item">
-
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-           alt="Forest map">
-
-      <div class="gallery-overlay">
-        Wildlife Corridor Analysis
-      </div>
-
-    </a>
-
-    <a href="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
-       target="_blank"
-       class="gallery-item">
-
-      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
-           alt="Forest canopy">
-
-      <div class="gallery-overlay">
-        Habitat Connectivity Mapping
-      </div>
-
-    </a>
-
-  </div>
-
-</section>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -185,30 +121,12 @@
   <h2>EcoGIS Studio</h2>
 
   <p>
-    Wildlife Ecology • Spatial Analysis • Conservation Mapping
+    GIS • Wildlife Ecology • Spatial Analysis • Conservation Research
   </p>
 
 </footer>
 
-<!-- REVEAL SCRIPT -->
-<script>
-const reveals = document.querySelectorAll('.reveal');
-
-function revealSections() {
-  const triggerBottom = window.innerHeight * 0.85;
-
-  reveals.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if (sectionTop < triggerBottom) {
-      section.classList.add('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', revealSections);
-revealSections();
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
