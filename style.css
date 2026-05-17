@@ -32,18 +32,6 @@ header {
   padding: 20px;
 }
 
-/* Logo section */
-.logo-section {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
 .logo-image {
   width: 200px;
   height: auto;
@@ -51,7 +39,7 @@ header {
   margin: 0;
 }
 
-.logo {
+.logo-text {
   font-size: 2.6rem;
   letter-spacing: 2px;
   font-weight: 300;
@@ -60,74 +48,6 @@ header {
 .logo span {
   font-weight: 600;
   color: #b7d3b0;
-}
-
-/* =====================================
-   GLOBAL SITE HEADER
-   ===================================== */
-
-.site-header {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-
-  padding: 30px 20px 20px;
-
-  background:
-    linear-gradient(rgba(12,18,12,0.85),
-    rgba(12,18,12,0.92));
-
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-
-.logo-link {
-  text-decoration: none;
-}
-
-/* LOGO IMAGE */
-
-.site-logo {
-  width: 110px;
-  height: auto;
-
-  margin-bottom: 12px;
-
-  filter:
-    drop-shadow(0 0 12px rgba(0,0,0,0.35));
-
-  transition:
-    transform 0.3s ease;
-}
-
-.site-logo:hover {
-  transform: scale(1.03);
-}
-
-/* BRANDING */
-
-.site-branding h1 {
-
-  margin: 0;
-
-  font-size: 2rem;
-  letter-spacing: 2px;
-  font-weight: 600;
-
-  color: #edf2ed;
-}
-
-.site-branding p {
-
-  margin-top: 8px;
-
-  color: #b8c8b8;
-
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
 }
 
 /* Navigation */
