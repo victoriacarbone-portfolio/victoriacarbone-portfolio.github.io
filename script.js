@@ -25,3 +25,40 @@ function scrollCarousel(id, direction) {
     behavior: "smooth"
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.querySelector(".lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  // Select ALL images inside your photography grids/carousels
+  const images = document.querySelectorAll(".photo-grid img, .carousel img, .gallery-item img");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      lightboxImg.src = img.src;
+    });
+  });
+
+  // Close when clicking X
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  // Close when clicking outside image
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  });
+
+  // Close with ESC key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("active");
+    }
+  });
+
+});
