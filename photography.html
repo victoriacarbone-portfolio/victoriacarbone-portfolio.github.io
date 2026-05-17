@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Photography | EcoGIS Studio</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+ <div class="logo-image">
+  <img src="EcoGIS Logo.png" alt="EcoGIS Studio Logo">
+</div>
+
+  <div class="site-branding">
+    <h1>Nature Photography</h1>
+    <p>A visual field journal of wildlife, landscapes, and ecological detail</p>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="photography.html">Nautre Photography</a>
+    <a href="resume.html">Field CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- INTRO -->
+  <section class="section reveal">
+    <h2>Field Photography Archive</h2>
+    <p>
+      This collection documents wildlife encounters, landscapes, and ecological textures observed
+      through fieldwork and exploration. Images are organized by habitat type and ecological theme.
+    </p>
+  </section>
+
+  <!-- WILDLIFE GRID -->
+  <section class="section reveal">
+    <h2>Wildlife</h2>
+
+    <div class="photo-grid">
+      <img src="images/wildlife1.jpg" alt="Wildlife photo 1" />
+      <img src="images/wildlife2.jpg" alt="Wildlife photo 2" />
+      <img src="images/wildlife3.jpg" alt="Wildlife photo 3" />
+      <img src="images/wildlife4.jpg" alt="Wildlife photo 4" />
+    </div>
+  </section>
+
+  <!-- LANDSCAPES GRID -->
+  <section class="section reveal">
+    <h2>Landscapes</h2>
+
+    <div class="photo-grid">
+      <img src="images/landscape1.jpg" alt="Landscape photo 1" />
+      <img src="images/landscape2.jpg" alt="Landscape photo 2" />
+      <img src="images/landscape3.jpg" alt="Landscape photo 3" />
+    </div>
+  </section>
+
+  <!-- MACRO CAROUSEL -->
+  <section class="section reveal">
+    <h2>Macro & Ecological Detail</h2>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollCarousel('macroCarousel', -1)">‹</button>
+
+      <div class="carousel" id="macroCarousel">
+        <img src="images/macro1.jpg" alt="Macro photo 1" />
+        <img src="images/macro2.jpg" alt="Macro photo 2" />
+        <img src="images/macro3.jpg" alt="Macro photo 3" />
+        <img src="images/macro4.jpg" alt="Macro photo 4" />
+      </div>
+
+      <button class="carousel-btn right" onclick="scrollCarousel('macroCarousel', 1)">›</button>
+    </div>
+  </section>
+
+  <!-- FIELD NOTES CAROUSEL -->
+  <section class="section reveal">
+    <h2>Field Notes</h2>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollCarousel('notesCarousel', -1)">‹</button>
+
+      <div class="carousel" id="notesCarousel">
+        <img src="images/field1.jpg" alt="Field photo 1" />
+        <img src="images/field2.jpg" alt="Field photo 2" />
+        <img src="images/field3.jpg" alt="Field photo 3" />
+      </div>
+
+      <button class="carousel-btn right" onclick="scrollCarousel('notesCarousel', 1)">›</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h2>© EcoGIS Studio</h2>
+
+    <p>
+      GIS • Wildlife Ecology • Spatial Analysis • Conservation Research
+    </p>
+    
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
