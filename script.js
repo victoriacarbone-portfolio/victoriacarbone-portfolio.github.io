@@ -15,3 +15,13 @@ function revealSections() {
 window.addEventListener('scroll', revealSections);
 
 revealSections();
+
+
+function scrollCarousel(id, direction) {
+  const carousel = document.getElementById(id);
+
+  carousel.scrollBy({
+    left: direction * 320,
+    behavior: "smooth"
+  });
+}
