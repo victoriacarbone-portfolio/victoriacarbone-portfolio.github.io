@@ -36,16 +36,16 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0,
-  padding: 0,
+  margin: 0;
+  padding: 0;
 }
 
 .logo-image img {
   height: 200px;
   width: auto;
   display: block;
-  margin: 0,
-  padding: 0,
+  margin: 0;
+  padding: 0;
 }
 
 .logo-text {
