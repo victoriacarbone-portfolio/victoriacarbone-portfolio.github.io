@@ -56,24 +56,10 @@ body::before {
   color: #b7d3b0;
 }
 
-/* Navigation */
-.nav-bar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.nav-bar a {
-  text-decoration: none;
-}
-
 /* TYPOGRAPHY */
 h1, h2, h3 {
   letter-spacing: 0.5px;
+  margin-top: 0; 
 }
 
 h1 {
