@@ -27,16 +27,22 @@ body::before {
   z-index: -1;
 }
 
-header {
+.site-header {
   text-align: center;
   padding: 20px;
 }
 
 .logo-image {
-  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.logo-image img {
   height: 80px;
-  padding: 0;
-  margin: 0;
+  width: auto;
+  display: block;
 }
 
 .logo-text {
@@ -112,9 +118,9 @@ h2 {
 .hero {
   height: 85vh;
 
-   background:
-     linear-gradient(rgba(10,15,10,0.6), rgba(10,15,10,0.7)),
-     url('https://github.com/victoriacarbone-portfolio/victoriacarbone-portfolio.github.io/blob/main/images/background-scenery') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(10,15,10,0.6), rgba(10,15,10,0.7)),
+    url('images/background-scenery.jpg') center/cover no-repeat;
 
   display: flex;
   align-items: center;
