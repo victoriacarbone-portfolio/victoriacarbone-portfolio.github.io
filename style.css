@@ -172,6 +172,40 @@ h2 {
   max-width: 260px;
 }
 
+
+.about-intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.about-photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  border: 2px solid rgba(183, 211, 176, 0.5);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.profile-layout {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 18%;
+}
+
+.profile-text {
+  max-width: 800px;
+}
+
+@media (max-width: 900px) {
+  .profile-layout {
+    flex-direction: column;
+    padding: 40px 10%;
+  }
+}
 /* GRID */
 .grid {
   display: grid;
