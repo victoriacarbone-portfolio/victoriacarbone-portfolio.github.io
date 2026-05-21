@@ -51,7 +51,7 @@ body::before {
   font-weight: 300;
 }
 
-.logo span {
+.logo-text span {
   font-weight: 600;
   color: #b7d3b0;
 }
@@ -122,12 +122,6 @@ h2 {
 .tagline {
   font-size: 1.2rem;
   color: #e9f0e9;
-}
-
-.subtag {
-  color: #aebdae;
-  font-size: 0.95rem;
-  margin-top: 12px;
 }
 
 /* MISSION */
