@@ -53,11 +53,18 @@
   <section class="section reveal">
     <h2>Wildlife</h2>
 
-    <div class="photo-grid">
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollCarousel('macroCarousel', -1)">‹</button>
+
+      <div class="carousel" id="macroCarousel">
       <img src="images/wildlife1.jpg" alt="Wildlife photo 1" />
       <img src="images/wildlife2.jpg" alt="Wildlife photo 2" />
       <img src="images/wildlife3.jpg" alt="Wildlife photo 3" />
       <img src="images/wildlife4.jpg" alt="Wildlife photo 4" />
+    </div>
+      
+      <button class="carousel-btn right" onclick="scrollCarousel('macroCarousel', 1)">›</button>
     </div>
   </section>
 
@@ -65,10 +72,17 @@
   <section class="section reveal">
     <h2>Landscapes</h2>
 
-    <div class="photo-grid">
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollCarousel('macroCarousel', -1)">‹</button>
+
+      <div class="carousel" id="macroCarousel">
       <img src="images/landscape1.jpg" alt="Landscape photo 1" />
       <img src="images/landscape2.jpg" alt="Landscape photo 2" />
       <img src="images/landscape3.jpg" alt="Landscape photo 3" />
+    </div>
+      
+      <button class="carousel-btn right" onclick="scrollCarousel('macroCarousel', 1)">›</button>
     </div>
   </section>
 
