@@ -62,3 +62,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+// LIGHTBOX
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const closeBtn = document.querySelector(".lightbox-close");
+
+document.querySelectorAll(".carousel img").forEach(img => {
+
+  img.addEventListener("click", () => {
+
+    lightbox.classList.add("active");
+
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+
+  });
+
+});
+
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+});
+
+lightbox.addEventListener("click", (e) => {
+
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
+
+});
