@@ -319,11 +319,6 @@ h2 {
   border-radius: 10px;
 }
 
-.story-reflection {
-  padding: 6rem 1.5rem;
-  background: linear-gradient(to bottom, #0f1720, #111c22);
-  color: #e8efe9;
-}
 
 .story-container {
   max-width: 750px;
