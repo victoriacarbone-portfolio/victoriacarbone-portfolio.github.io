@@ -192,6 +192,23 @@ h3 {
   padding: 80px 18%;
 }
 
+.gallery-overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+
+  background: rgba(30, 30, 30, 0.78);
+
+  backdrop-filter: blur(6px);
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
 .gallery-overlay h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
