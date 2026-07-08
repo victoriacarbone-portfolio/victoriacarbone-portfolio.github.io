@@ -107,6 +107,22 @@ h3 {
   color: #b7d3b0;
 }
 
+/* LINKS */
+
+p a,
+.section a,
+.field-journal a {
+  color: #b7d3b0;
+  font-weight: 500;
+}
+
+p a:hover,
+.section a:hover,
+.field-journal a:hover {
+  color: #d8ead4;
+  text-decoration: underline;
+}
+
 /* HERO */
 .hero {
   height: 85vh;
