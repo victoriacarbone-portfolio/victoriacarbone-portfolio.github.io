@@ -13,9 +13,10 @@ TABLE OF CONTENTS
 6. Projects
 7. Photography & Artwork
 8. Contact
-9. Footer
-10. Animations
-11. Responsive
+9. CV
+10. Footer
+11. Animations
+12. Responsive
 
 ==================================================*/
 
@@ -91,6 +92,25 @@ p a:hover,
 .section,
 .gallery-section {
   padding: 80px 18%;
+}
+
+.section,
+.field-profile,
+.mission-banner,
+.field-journal,
+.gallery-section {
+    text-align: center;
+}
+
+.section p,
+.field-profile p,
+.mission-banner p,
+.field-journal p {
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
 /*==================================================
@@ -672,6 +692,22 @@ p a:hover,
 }
 
 /*==================================================
+                    CV
+==================================================*/
+.cv-section{
+
+    background: rgba(35,50,35,.55);
+
+    border-radius:12px;
+
+    padding:30px;
+
+    margin-bottom:40px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+/*==================================================
                     FOOTER
 ==================================================*/
 .footer {
@@ -679,8 +715,9 @@ p a:hover,
   text-align: center;
   background: rgba(12,18,12,0.95);
   border-top: 1px solid rgba(255,255,255,0.04);
+  width:100%;
+  box-sizing:border-box;
 }
-
 
 /*==================================================
                  ANIMATIONS
