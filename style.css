@@ -685,6 +685,22 @@ p a:hover,
   text-align: center;
 }
 
+.contact-card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.contact-card li::before {
+
+    content: "• ";
+
+    color: #b7d3b0;
+
+}
+
 .contact-card a {
   color: #b7d3b0;
   text-decoration: none;
