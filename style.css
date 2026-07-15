@@ -171,10 +171,13 @@ p a:hover,
 }
 
 .nav a {
-  text-decoration: none;
-  color: #d9e5d9;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    color: #d9e5d9;
+    text-decoration: none;
 }
 
 .nav a:hover {
