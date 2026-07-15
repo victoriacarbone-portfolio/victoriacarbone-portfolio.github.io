@@ -1,95 +1,112 @@
-const reveals = document.querySelectorAll('.reveal');
+/*==================================================
+                ECOGIS STUDIO
+                  script.js
+
+TABLE OF CONTENTS
+
+1. Reveal Animations
+2. Carousel Controls
+3. Photography Lightbox
+
+==================================================*/
+
+
+/*==================================================
+              REVEAL ANIMATIONS
+==================================================*/
+
+const reveals = document.querySelectorAll(".reveal");
 
 function revealSections() {
-  const triggerBottom = window.innerHeight * 0.85;
 
-  reveals.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
+    const triggerBottom = window.innerHeight * 0.85;
 
-    if (sectionTop < triggerBottom) {
-      section.classList.add('active');
-    }
-  });
+    reveals.forEach(section => {
+
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < triggerBottom) {
+            section.classList.add("active");
+        }
+
+    });
+
 }
 
-window.addEventListener('scroll', revealSections);
-
+window.addEventListener("scroll", revealSections);
 revealSections();
 
 
-function scrollCarousel(id, direction) {
-  const carousel = document.getElementById(id);
+/*==================================================
+              CAROUSEL CONTROLS
+==================================================*/
 
-  carousel.scrollBy({
-    left: direction * 320,
-    behavior: "smooth"
-  });
+function scrollCarousel(id, direction) {
+
+    const carousel = document.getElementById(id);
+
+    if (!carousel) return;
+
+    carousel.scrollBy({
+        left: direction * 320,
+        behavior: "smooth"
+    });
+
 }
+
+
+/*==================================================
+             PHOTOGRAPHY LIGHTBOX
+==================================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.querySelector(".lightbox-img");
-  const closeBtn = document.querySelector(".lightbox-close");
+    const lightbox = document.getElementById("lightbox");
 
-  // Select ALL images inside your photography grids/carousels
-  const images = document.querySelectorAll(".photo-grid img, .carousel img, .gallery-item img");
+    // If the page doesn't have a lightbox, stop here.
+    if (!lightbox) return;
 
-  images.forEach(img => {
-    img.addEventListener("click", () => {
-      lightbox.classList.add("active");
-      lightboxImg.src = img.src;
+    const lightboxImg = lightbox.querySelector(".lightbox-img");
+    const closeBtn = lightbox.querySelector(".lightbox-close");
+
+    // Only enable the lightbox for photography images.
+    const images = document.querySelectorAll(
+        ".photo-grid img, .carousel-item img, .paired-images img"
+    );
+
+    images.forEach(img => {
+
+        img.addEventListener("click", () => {
+
+            lightbox.classList.add("active");
+
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+
+        });
+
     });
-  });
 
-  // Close when clicking X
-  closeBtn.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-  });
-
-  // Close when clicking outside image
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.classList.remove("active");
+    function closeLightbox() {
+        lightbox.classList.remove("active");
     }
-  });
 
-  // Close with ESC key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      lightbox.classList.remove("active");
-    }
-  });
+    closeBtn.addEventListener("click", closeLightbox);
 
-});
+    lightbox.addEventListener("click", e => {
 
-// LIGHTBOX
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
 
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.querySelector(".lightbox-img");
-const closeBtn = document.querySelector(".lightbox-close");
+    });
 
-document.querySelectorAll(".carousel img").forEach(img => {
+    document.addEventListener("keydown", e => {
 
-  img.addEventListener("click", () => {
+        if (e.key === "Escape") {
+            closeLightbox();
+        }
 
-    lightbox.classList.add("active");
-
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-
-  });
-
-});
-
-closeBtn.addEventListener("click", () => {
-  lightbox.classList.remove("active");
-});
-
-lightbox.addEventListener("click", (e) => {
-
-  if (e.target === lightbox) {
-    lightbox.classList.remove("active");
-  }
+    });
 
 });
