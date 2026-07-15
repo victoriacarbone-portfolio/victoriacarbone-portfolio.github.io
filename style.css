@@ -1,7 +1,27 @@
-/* =====================================
-   ECOGIS STUDIO V3
-   FIELD JOURNAL AESTHETIC
-   ===================================== */
+/*==================================================
+
+               ECOGIS STUDIO
+                 style.css
+
+TABLE OF CONTENTS
+
+1. Global
+2. Header
+3. Navigation
+4. Home
+5. About
+6. Projects
+7. Photography & Artwork
+8. Contact
+9. Footer
+10. Animations
+11. Responsive
+
+==================================================*/
+
+/*==================================================
+                    GLOBAL
+==================================================*/
 
 body {
   margin: 0;
@@ -26,6 +46,56 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+  margin-top: 0; 
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+/* LINKS */
+
+p a,
+.section a,
+.field-journal a {
+  color: #b7d3b0;
+  font-weight: 500;
+}
+
+p a:hover,
+.section a:hover,
+.field-journal a:hover {
+  color: #d8ead4;
+  text-decoration: underline;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #e9f0e9;
+}
+
+/* SECTIONS */
+.section,
+.gallery-section {
+  padding: 80px 18%;
+}
+
+/*==================================================
+                  SITE HEADER
+==================================================*/
 
 .site-header {
   text-align: center;
@@ -59,26 +129,10 @@ body::before {
   color: #b7d3b0;
 }
 
-/* TYPOGRAPHY */
-h1, h2, h3 {
-  letter-spacing: 0.5px;
-  margin-top: 0; 
-}
+/*==================================================
+                  NAVIGATION
+==================================================*/
 
-h1 {
-  font-weight: 600;
-}
-
-h2 {
-  font-weight: 500;
-  margin-bottom: 18px;
-}
-
-h3 {
-  font-weight: 400;
-}
-
-/* NAVIGATION */
 .nav {
   position: sticky;
   top: 0;
@@ -107,21 +161,9 @@ h3 {
   color: #b7d3b0;
 }
 
-/* LINKS */
-
-p a,
-.section a,
-.field-journal a {
-  color: #b7d3b0;
-  font-weight: 500;
-}
-
-p a:hover,
-.section a:hover,
-.field-journal a:hover {
-  color: #d8ead4;
-  text-decoration: underline;
-}
+/*==================================================
+                   HOME PAGE
+==================================================*/
 
 /* HERO */
 .hero {
@@ -142,11 +184,6 @@ p a:hover,
   padding: 30px;
 }
 
-.tagline {
-  font-size: 1.2rem;
-  color: #e9f0e9;
-}
-
 /* MISSION */
 .mission-banner {
   background: rgba(35,50,35,0.65);
@@ -157,8 +194,29 @@ p a:hover,
   border-bottom: 1px solid rgba(255,255,255,0.05);
   }
 
-/* ABOUT RESEARCHER */
+/* FIELD JOURNAL */
+.field-journal {
+  padding: 80px 20%;
+  position: relative;
+}
 
+.journal-label {
+  color: #8ea18e;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  margin-bottom: 15px;
+}
+
+.field-journal p {
+  color: #d4dfd4;
+  max-width: 800px;
+}
+
+/*==================================================
+                  ABOUT PAGE
+==================================================*/
+
+/* ABOUT RESEARCHER */
 .researcher-profile {
   display: flex;
   align-items: flex-start;
@@ -182,52 +240,6 @@ p a:hover,
 
 .researcher-text {
   flex: 1;
-}
-
-/* FIELD JOURNAL */
-.field-journal {
-  padding: 80px 20%;
-  position: relative;
-}
-
-.journal-label {
-  color: #8ea18e;
-  letter-spacing: 3px;
-  font-size: 0.75rem;
-  margin-bottom: 15px;
-}
-
-.field-journal p {
-  color: #d4dfd4;
-  max-width: 800px;
-}
-
-/* SECTIONS */
-.section,
-.gallery-section {
-  padding: 80px 18%;
-}
-
-.gallery-overlay h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.gallery-overlay p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  max-width: 260px;
-}
-
-.gallery-overlay h3,
-.gallery-overlay p {
-  display: inline-block;
-
-  background: rgba(30,30,30,0.78);
-
-  padding: 8px 12px;
-
-  border-radius: 8px;
 }
 
 .about-intro {
@@ -257,41 +269,15 @@ p a:hover,
   max-width: 800px;
 }
 
-@media (max-width: 900px) {
-  .profile-layout {
-    flex-direction: column;
-    padding: 40px 10%;
-  }
-}
+/*==================================================
+                PROJECTS PAGE
+==================================================*/
+
 /* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-}
-
-/* PROJECT CARDS */
-.project-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.pinned-card {
-  position: relative;
-}
-
-.pin {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-
-  background: #c8d9c8;
-
-  top: 10px;
-  right: 10px;
-
-  box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
 .card {
@@ -335,6 +321,29 @@ p a:hover,
 .card p {
   padding-bottom: 22px;
   color: #d0ddd0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pinned-card {
+  position: relative;
+}
+
+.pin {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  background: #c8d9c8;
+
+  top: 10px;
+  right: 10px;
+
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
 /* STORYMAP */
@@ -447,6 +456,32 @@ p a:hover,
   z-index: 2;
 }
 
+.gallery-overlay h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.gallery-overlay p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+.gallery-overlay h3,
+.gallery-overlay p {
+  display: inline-block;
+
+  background: rgba(30,30,30,0.78);
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+}
+
+
+/*==================================================
+            PHOTOGRAPHY & ARTWORK
+==================================================*/
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -548,18 +583,6 @@ p a:hover,
   border-radius: 50%;
 }
 
-.lightbox-img {
-  max-width: 95vw;
-  max-height: 95vh;
-
-  width: auto;
-  height: auto;
-
-  object-fit: contain;
-
-  border-radius: 10px;
-}
-
 .carousel-item img {
   cursor: pointer;
 }
@@ -567,6 +590,63 @@ p a:hover,
 .carousel-item img:hover {
   transform: scale(1.02);
 }
+
+/*==================================================
+                  LIGHTBOX
+==================================================*/
+
+.lightbox-img{
+
+    max-width:95vw;
+    max-height:95vh;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.85);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+
+  user-select: none;
+}
+
+/*==================================================
+                 CONTACT PAGE
+==================================================*/
 
 .contact-card {
   max-width: 700px;
@@ -591,47 +671,9 @@ p a:hover,
   color: #dcead8;
 }
 
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0,0,0,0.85);
-
-  display: none;
-  align-items: center;
-  justify-content: center;
-
-  z-index: 9999;
-}
-
-.lightbox.active {
-  display: flex;
-}
-
-.lightbox-img {
-  max-width: 90%;
-  max-height: 85%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-
-  font-size: 32px;
-  color: white;
-  cursor: pointer;
-
-  user-select: none;
-}
-
-/* FOOTER */
+/*==================================================
+                    FOOTER
+==================================================*/
 .footer {
   padding: 50px;
   text-align: center;
@@ -639,7 +681,11 @@ p a:hover,
   border-top: 1px solid rgba(255,255,255,0.04);
 }
 
-/* REVEAL ANIMATIONS */
+
+/*==================================================
+                 ANIMATIONS
+==================================================*/
+
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -653,7 +699,33 @@ p a:hover,
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+/* Large tablets */
+@media (max-width:900px){
+
+}
+
+/* Tablets */
+@media (max-width:800px){
+
+}
+
+/* Phones */
+@media (max-width:600px){
+
+}
+
+@media (max-width: 900px) {
+  .profile-layout {
+    flex-direction: column;
+    padding: 40px 10%;
+  }
+}
+
 @media (max-width: 900px) {
 
   .section,
@@ -734,3 +806,4 @@ p a:hover,
   }
 
 }
+
