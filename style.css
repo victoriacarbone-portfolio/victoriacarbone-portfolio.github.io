@@ -697,17 +697,21 @@ p a:hover,
 /*==================================================
                     CV
 ==================================================*/
-.cv-section{
+.cv-section {
 
-    background: rgba(35,50,35,.55);
+    max-width: 900px;
 
-    border-radius:12px;
+    margin: 40px auto;
 
-    padding:30px;
+    padding: 35px;
 
-    margin-bottom:40px;
+    background: rgba(34,48,34,.75);
 
-    border:1px solid rgba(255,255,255,.08);
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    text-align: center;
 
 }
 /*==================================================
