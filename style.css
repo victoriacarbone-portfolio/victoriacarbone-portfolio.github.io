@@ -442,29 +442,29 @@ p a:hover,
 
 .gallery-overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.85),
-    rgba(0,0,0,0.2),
-    transparent
-  );
-
-  padding: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: rgba(35, 35, 35, 0.82);
+  backdrop-filter: blur(4px);
+  padding: 14px 18px;
+  border-radius: 8px;
+  text-align: left;
 }
 
 .gallery-overlay h3 {
-  margin: 0 0 6px;
-  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 .gallery-overlay p {
   margin: 0;
-  font-size: 0.9rem;
-  opacity: 0.9;
+  color: rgba(255,255,255,0.92);
+  font-size: .92rem;
+  line-height: 1.45;
+
 }
 
 .gallery-tag {
